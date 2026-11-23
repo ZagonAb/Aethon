@@ -5,16 +5,15 @@ Compatible with 16:9, 4:3 and 1:1 displays, with smooth navigation and built-in
 RetroAchievements support.
 
 
-
 ---
-![screen0](https://github.com/ZagonAb/AnaloguePegasus/blob/3181e45ce666916c0dc086c9808f6adcc04e5c11/.meta/screenshots/screen.png)
+![screen](https://github.com/ZagonAb/Aethon/blob/5ae0d67d25375346bd3d9374622ba33ddabcad96/.meta/screenshots/screen.png)
 
-![screen1](https://github.com/ZagonAb/AnaloguePegasus/blob/3181e45ce666916c0dc086c9808f6adcc04e5c11/.meta/screenshots/screen0.png)
+![screen1](https://github.com/ZagonAb/Aethon/blob/5ae0d67d25375346bd3d9374622ba33ddabcad96/.meta/screenshots/screen1.png)
 
-![screen2](https://github.com/ZagonAb/AnaloguePegasus/blob/3181e45ce666916c0dc086c9808f6adcc04e5c11/.meta/screenshots/screen1.png)
+![screen2](https://github.com/ZagonAb/Aethon/blob/5ae0d67d25375346bd3d9374622ba33ddabcad96/.meta/screenshots/screen2.png)
 
-
-
+![screen3](https://github.com/ZagonAb/Aethon/blob/5ae0d67d25375346bd3d9374622ba33ddabcad96/.meta/screenshots/screen3.png)
+---
 
 
 # License
