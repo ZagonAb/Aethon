@@ -35,7 +35,7 @@ FocusScope {
     readonly property real _gap: PocketMetrics.spacing
     readonly property real _topReserve: SettingsManager.topbarEnabled ? PocketMetrics.headerHeight : 0
     readonly property real _bottomMargin: Math.round(PocketMetrics.margin * 0.6)
-    readonly property real _fullH: Math.round(root._t * 1.7)
+    readonly property real _fullH: Math.round(root._t * 1.9)
     readonly property real _compactH: Math.round(root._t * 0.8)
     readonly property real _menuH: menuColumn.height
 
@@ -304,7 +304,7 @@ FocusScope {
         readonly property real labelSize: Math.max(8, Math.round(root._t * 0.32))
         readonly property real titleSize: Math.max(9, Math.round(root._t * 0.48))
         readonly property real infoSize: Math.max(8, Math.round(root._t * 0.34))
-        readonly property real lineFactor: 1.15
+        readonly property real lineFactor: 1.3
         readonly property real labelLine: Math.round(labelSize * lineFactor)
         readonly property real titleLine: Math.round(titleSize * lineFactor)
         readonly property real infoLine:  Math.round(infoSize  * lineFactor)
