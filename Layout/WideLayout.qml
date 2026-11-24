@@ -131,7 +131,7 @@ Item {
             Text {
                 width: descriptionContainer.width
                 text: root.game
-                ? (root.game.summary || root.game.description || Language.t("details_no_summary"))
+                ? (root.game.description || root.game.summary || Language.t("details_no_summary"))
                 : ""
                 color: colors.fg
                 font.pixelSize: PocketMetrics.bodySize

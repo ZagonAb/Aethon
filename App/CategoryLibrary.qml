@@ -72,13 +72,19 @@ QtObject {
         });
     }
 
+    function compareGames(a, b) {
+        var ta = a.sortBy || a.title || "";
+        var tb = b.sortBy || b.title || "";
+        return ta.localeCompare(tb);
+    }
+
     function gamesForCategory(section, value) {
         var all = api.allGames.toVarArray();
         var filtered = all.filter(function(g) {
             var vals = root.valuesForGame(section, g);
             return vals.indexOf(value) !== -1;
         });
-        filtered.sort(function(a, b) { return a.title.localeCompare(b.title); });
+        filtered.sort(root.compareGames);
         return filtered;
     }
 
@@ -128,7 +134,7 @@ QtObject {
         var filtered = all.filter(function (g) {
             return root.yearLabel(g.releaseYear) === value;
         });
-        filtered.sort(function (a, b) { return a.title.localeCompare(b.title); });
+        filtered.sort(root.compareGames);
         return filtered;
     }
 
