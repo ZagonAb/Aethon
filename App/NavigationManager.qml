@@ -312,7 +312,6 @@ QtObject {
     function isGameListVisible() {
         var screen = AppState.currentScreen;
 
-        if (screen === Enums.screenCalendarDay) return true;
         if (screen === Enums.screenRAGames) return true;
         if (screen === Enums.screenSearch) return AppState.searchResults && AppState.searchResults.length > 0;
         if (screen === Enums.screenLibrary) {
