@@ -23,6 +23,7 @@ Item {
 
     property bool provideImplicitSize: false
     property int padVertical: 2
+    property real lineHeightPx: 0
 
     property bool outlineEnabled: false
     property color outlineColor: "#000000"
@@ -78,6 +79,8 @@ Item {
         bottomPadding: mq.padVertical
         style: mq.outlineEnabled ? Text.Outline : Text.Normal
         styleColor: mq.outlineColor
+        lineHeightMode: mq.lineHeightPx > 0 ? Text.FixedHeight : Text.ProportionalHeight
+        lineHeight: mq.lineHeightPx > 0 ? mq.lineHeightPx : 1.0
     }
 
     Text {
@@ -93,6 +96,8 @@ Item {
         bottomPadding: mq.padVertical
         style: mq.outlineEnabled ? Text.Outline : Text.Normal
         styleColor: mq.outlineColor
+        lineHeightMode: mq.lineHeightPx > 0 ? Text.FixedHeight : Text.ProportionalHeight
+        lineHeight: mq.lineHeightPx > 0 ? mq.lineHeightPx : 1.0
     }
 
     Text {
@@ -108,6 +113,8 @@ Item {
         bottomPadding: mq.padVertical
         style: mq.outlineEnabled ? Text.Outline : Text.Normal
         styleColor: mq.outlineColor
+        lineHeightMode: mq.lineHeightPx > 0 ? Text.FixedHeight : Text.ProportionalHeight
+        lineHeight: mq.lineHeightPx > 0 ? mq.lineHeightPx : 1.0
     }
 
     function reset() {

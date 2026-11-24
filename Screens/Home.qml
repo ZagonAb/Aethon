@@ -304,6 +304,10 @@ FocusScope {
         readonly property real labelSize: Math.max(8, Math.round(root._t * 0.32))
         readonly property real titleSize: Math.max(9, Math.round(root._t * 0.48))
         readonly property real infoSize: Math.max(8, Math.round(root._t * 0.34))
+        readonly property real lineFactor: 1.15
+        readonly property real labelLine: Math.round(labelSize * lineFactor)
+        readonly property real titleLine: Math.round(titleSize * lineFactor)
+        readonly property real infoLine:  Math.round(infoSize  * lineFactor)
 
         FontMetrics {
             id: continueFm
@@ -354,6 +358,8 @@ FocusScope {
                     color: colors.muted
                     font.pixelSize: continueCard.labelSize
                     font.family: SettingsManager.fontFamily
+                    lineHeightMode: Text.FixedHeight
+                    lineHeight: continueCard.labelLine
                     elide: Text.ElideRight
                 }
 
@@ -362,18 +368,23 @@ FocusScope {
                     text: root.cardTitle
                     color: root.focusedCard === 0 ? colors.accent : colors.fg
                     pixelSize: continueCard.titleSize
+                    lineHeightPx: continueCard.titleLine
                     bold: true
                     active: root.focusedCard === 0
                     padVertical: 0
                 }
 
-                Text {
+                MarqueeText {
                     width: parent.width
                     text: root.cardInfo
                     color: colors.muted
-                    font.pixelSize: continueCard.infoSize
-                    font.family: SettingsManager.fontFamily
-                    elide: Text.ElideRight
+                    pixelSize: continueCard.infoSize
+                    lineHeightPx: continueCard.infoLine
+                    bold: false
+                    active: root.focusedCard === 0
+                    padVertical: 0
+                    waitDuration: 3200
+                    msPerPixel: 30
                 }
             }
         }
